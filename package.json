@@ -13,6 +13,8 @@
   "author": "Obed Ampah",
   "license": "ISC",
   "dependencies": {
+    "babel-preset-stage-2": "^6.24.1",
+    "react-jsonschema-form": "^0.51.0",
     "webpack": "^3.7.1",
     "webpack-dev-server": "^2.9.2"
   },

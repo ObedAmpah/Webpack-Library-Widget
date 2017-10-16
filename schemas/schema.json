@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "required": [
+    "firstName",
+    "lastName"
+  ],
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "title": "First name"
+    },
+    "lastName": {
+      "type": "string",
+      "title": "Last name"
+    },
+    "age": {
+      "type": "integer",
+      "title": "Age",
+      "minimum": 18
+    },
+    "sex" : {
+      "type": "string",
+      "title": "Sex",
+      "enumNames": ["M", "F"]
+    },
+    "telephone": {
+      "type": "string",
+      "title": "Telephone",
+      "minLength": 10
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date"
+    },
+    "bio": {
+      "type": "string",
+      "title": "Bio",
+      "maxLength": 140
+    },
+    "password": {
+      "type": "string",
+      "title": "Password",
+      "minLength": 3
+    }
+  },
+  "rightInfo": "info on the right",
+  "middleInfo": "info in the middle",
+  "leftInfo": "info on the left",
+  "disclaimer": "Any kind of disclaimer associated with the form"
+
+}

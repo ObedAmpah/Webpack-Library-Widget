@@ -1,0 +1,42 @@
+{
+  "classNames": "custom-name",
+  "firstName": {
+    "ui:autofocus": true,
+    "ui:emptyValue": "",
+    "classNames": "first-name col-xs-6"
+  },
+  "lastName": {
+    "ui:emptyValue": "",
+    "classNames": "last-name col-xs-6"
+  },
+  "age": {
+    "ui:widget": "updown",
+    "ui:title": "Age of person",
+    "ui:description": "(Earthian Year)",
+    "classNames": "age col-xs-6"
+  },
+  "sex" : {
+    "ui:widget": "radio",
+    "classNames": "sex col-xs-6"
+  },
+  "bio": {
+    "ui:widget": "textarea",
+    "classNames": "bio col-xs-12"
+  },
+  "password": {
+    "ui:widget": "password",
+    "ui:help": "Hint: Make it strong!",
+    "classNames": "password col-xs-12"
+  },
+  "date": {
+    "ui:widget": "date",
+    "classNames": "date col-xs-6"
+  },
+  "telephone": {
+    "ui:options": {
+      "inputType": "tel"
+    },
+    "ui:description": "(No Dashes)",
+    "classNames": "telephone col-xs-6"
+  }
+}
