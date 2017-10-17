@@ -163,8 +163,6 @@ class MyForm extends Component {
     }
 
     // method to create schema for form
-    // should look to give it the config object
-    // as an argument
     createSchema = () => {
 
         const { SchemaState } = this.state
@@ -175,8 +173,6 @@ class MyForm extends Component {
     }
 
     // method to create the UI schema
-    // should look to give it the config object
-    // as an argument
     createUISchema = () => {
 
         const { UISchemaState } = this.state
@@ -219,8 +215,6 @@ class MyForm extends Component {
 
     // render method
     render() {
-
-        const {testFormData} = this.state
 
         // return object
         return (
