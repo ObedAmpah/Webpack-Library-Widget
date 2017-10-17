@@ -107,14 +107,14 @@ class MyForm extends Component {
                 }
             },
             testFormData: {
-                "firstName": "Obed",
-                "lastName": "Ampah",
-                "age": 32,
-                "sex": "M",
-                "telephone": "5558675309",
-                "date": "1980-01-10",
-                "bio": "dlkfjasdlkjfdsakjlfalksdjf",
-                "password": "dlskajfalsdkjfjaskldjfj"
+                "firstName":"Obed",
+                "lastName":"Ampah",
+                "age":32,
+                "sex":"M",
+                "telephone":"1231231234",
+                "date":"1980-04-15",
+                "bio":"sdlkfjdslakfjdasjlfdjljkfa",
+                "password":"adlkfjasdljfad"
             }
         }
     }
@@ -124,8 +124,6 @@ class MyForm extends Component {
         fetch('http://localhost:8090/formservice/getFormJasonSchema')
             .then(resp => resp.json())
             .then(schema => {
-                console.log('Schema from the service: ', schema)
-
                 this.setState({ SchemaState: schema })
             })
             .catch(err => console.error(err))
@@ -136,8 +134,6 @@ class MyForm extends Component {
         fetch('http://localhost:8090/formservice/getFormUiJasonSchema')
             .then(resp => resp.json())
             .then(schema => {
-                console.log('UISchema from the service: ', schema)
-
                 this.setState({ UISchemaState: schema })
 
                 // When UI Schema present first, JSON Schema can be set
@@ -191,6 +187,11 @@ class MyForm extends Component {
 
     }
 
+    // method to deliver prepopulated data
+    prepopulated = () => {
+        return this.state.testFormData
+    }
+
     // Post component mount method calls
     componentDidMount() {
 
@@ -219,6 +220,7 @@ class MyForm extends Component {
     // render method
     render() {
 
+        const {testFormData} = this.state
 
         // return object
         return (

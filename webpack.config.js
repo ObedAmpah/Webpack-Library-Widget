@@ -1,6 +1,10 @@
 const path = require('path')
 const webpack = require('webpack')
 
+const paths = {
+    appRoot: __dirname
+}
+
 module.exports = {
     entry: './src/index.js',
     output: {
